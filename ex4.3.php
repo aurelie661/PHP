@@ -1,0 +1,22 @@
+<?php
+
+$heure=readline('Quelle heure est-il ?');
+$minute=readline('Quelle sont les minutes actuelles ?');
+$seconde=readline('Quelle sont les secondes actuelles ?');
+if($seconde == 59 && $minute ==59){
+  $heure+=1;
+  $minute+=1;
+  $seconde=0;
+}
+elseif($seconde == 59){
+  $minute+=1;
+  $seconde=0;
+}
+else{
+  $seconde+=1;
+}
+echo('Dans une seconde il sera '.$heure.':'.$minute.':'.$seconde.' secondes');
+
+
+
+
