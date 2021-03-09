@@ -1,22 +1,42 @@
 <?php
 
-$heure=readline('Quelle heure est-il ?');
-$minute=readline('Quelle sont les minutes actuelles ?');
-$seconde=readline('Quelle sont les secondes actuelles ?');
-if($seconde == 59 && $minute ==59){
-  $heure+=1;
-  $minute+=1;
-  $seconde=0;
-}
-elseif($seconde == 59){
-  $minute+=1;
-  $seconde=0;
+$age=26;
+$anneDePermis=3;
+$accident=0;
+$anneeDAssurance=3;
+
+if($age >25){
+  $point1=1;
 }
 else{
-  $seconde+=1;
+  $point1=2;
 }
-echo('Dans une seconde il sera '.$heure.':'.$minute.':'.$seconde.' secondes');
-
+if($anneDePermis>2){
+  $point2=1;
+}
+else{
+  $point2=2;
+}
+if($accident<3){
+  if($accident<2){
+    if($accident <1){
+      $point3=0;
+    }
+    else{
+      $point3=1;
+    }
+  }else{
+    $point3=2;
+  }
+}
+else{
+  $point3=3;
+}
+if($anneeDAssurance >1){
+  $point4-=1;
+}
+ 
+$calculDePointFinal=$point1+$point2+$point3+$point4;
 
 
 
