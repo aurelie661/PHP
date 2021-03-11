@@ -7,5 +7,3 @@ if($nB < 0){
 else{
     echo('Le nombre est positif');
 }
-
-?>

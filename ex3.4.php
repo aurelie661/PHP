@@ -11,4 +11,3 @@ elseif($nB < 0){
 else{
     echo('Valeur positif');
 }
-?>
