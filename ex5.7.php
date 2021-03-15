@@ -1,4 +1,5 @@
 <?php
+//SORTIR LE PLUS GRAND NOMBRE TAPER ET SA POSITION
 for ($i = 1; $i <= 20; $i++) {
   $nombre = readline("Entrez le nombre numéro " . $i . " : ");
   if ($i == 1) {

@@ -1,5 +1,7 @@
 <?php
+//SORTIR LE PLUS GRAND NOMBRE TAPER ET SA POSITION 
 $i = 0;
+//FAIRE TANT QUE LE NOMBRE ET NON EGAL A ZERO
 do {
   $i++;
   $nombre = readline("Entrez le nombre numéro " . $i . " : ");

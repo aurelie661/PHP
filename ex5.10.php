@@ -14,15 +14,16 @@ function factorielle($nb2)
     }
     return $total;
 }
-
+//CHANCE AU TIERCE
 $chevauxPartant = readline("Chevaux partant : ");
 $chevauxJouer = readline("Chevaux joués : ");
 $p1 = $chevauxPartant - $chevauxJouer;
 $fP1 = factorielle($p1);
 $fPartant = factorielle($chevauxPartant);
 $fJouer = factorielle($chevauxJouer);
-
+//CHANCE DANS LORDRE
 $x = $fPartant / $fP1;
+//CHANCE DANS LE DESORDRE
 $y = $fPartant / $fJouer * $fP1;
 
 echo "Dans l'ordre vous avez 1 chance sur " . $x . " de gagner.\n";

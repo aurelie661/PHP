@@ -3,7 +3,7 @@ $i = 0;
 $sommeAPayer = 0;
 $billetDix = 0;
 $billetCinq = 0;
-
+//DEMANDER LES PRIX DES ARTICLES ET LES ADDITIONNER
 do {
     $i++;
     $achat = readline("Entrez le prix de l'article " . $i . " : ");
@@ -11,6 +11,7 @@ do {
 } while ($achat != 0);
 
 echo "La somme à payer est de : " . $sommeAPayer . "€\n";
+//DEMANDER LA SOMME AU CLIENT ET CALCULER SON RENDU
 $sommeDonne = readline("Vous donnez combien ? ");
 $rendu = $sommeDonne - $sommeAPayer;
 echo "La remis de monnaie est de : " . $rendu . " €\n";

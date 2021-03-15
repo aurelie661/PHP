@@ -1,5 +1,5 @@
 <?php
-
+//FONCTION CALCUL DE LA SOMME FACTORIELLE
 function sommeFactorielle($nb2)
 {
   $total = 0;
@@ -9,4 +9,5 @@ function sommeFactorielle($nb2)
   return $total;
 }
 $nombre = readline("Veuillez entrer un nombre : ");
+//AFFICHE LA SOMME FACTORIELLE DU NOMBRE TAPER
 echo sommeFactorielle($nombre);

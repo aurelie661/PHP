@@ -1,15 +1,12 @@
 <?php
-$compteurNegatif=0;
-$compteurPositif=0;
-$tailleTab=readline("Entrez la taille du tableau : ");
-for ($i=0; $i < $tailleTab; $i++) { 
-   $tab[$i]=readline("Entrez votre valeur : ");
+$phrase = readline("Veuillez saisir votre phrase :");
 
-   if($tab[$i]<0){
-      $compteurNegatif+=1;
-   }
-   elseif($tab[$i]>0){
-      $compteurPositif+=1;
-   }
-}
-echo"Nombre de négatif : ".$compteurNegatif."\nNombre de positif :".$compteurPositif;
+$alphabet="abcdefghijklmnopqrstuvwxyz";
+    for ($i=0; $i < count($alphabet); $i++) { 
+        if($char == $alphabet($i)){
+            return $i;
+        }
+    }
+    return -1;
+
+

@@ -4,7 +4,7 @@ $candidat1 = (float)readline('Score du candidat n°1 : ');
 $candidat2 = (float)readline('Score du candidat n°2 : ');
 $candidat3 = (float)readline('Score du candidat n°3 : ');
 $candidat4 = (float)readline('Score du candidat n°4 : ');
-
+//GERE LES ELECTION DE 4 CANDIDATS
 if ($candidat1 < 50) {
   if ($candidat1 < 12.5) {
     echo ('Vous êtes battu !');

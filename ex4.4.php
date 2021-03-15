@@ -4,6 +4,7 @@
 //   return $total;
 // }
 $nbDeCopie = readline('Combien de photocopie voulez vous effectuer :');
+//CALCUL LE PRIX DE X PHOTOCOPIE(s)
 if ($nbDeCopie <= 10) {
   $tarif = $nbDeCopie * 0.10;
 }

@@ -1,9 +1,8 @@
 <?php
 $nB = (int)readline("veuillez entrer un nombre :");
-if($nB < 0){
-    echo('Le nombre est négatif');
-}
-
-else{
-    echo('Le nombre est positif');
+//INDIQUE SI LE NOMBRE EST N2GATIF OU POSITIF
+if ($nB < 0) {
+    echo ('Le nombre est négatif');
+} else {
+    echo ('Le nombre est positif');
 }

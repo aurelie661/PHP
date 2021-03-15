@@ -1,5 +1,5 @@
 <?php
-
+//FONCTION DE LA FACTORIELLE
 function factorielle($nb2)
 {
   $total = 1;
@@ -9,4 +9,5 @@ function factorielle($nb2)
   return $total;
 }
 $nombre = readline("Veuillez entrer un nombre : ");
+//AFFICHE LA FACTORIELLE DU NOMBRE TAPER
 echo factorielle($nombre);
