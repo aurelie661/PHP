@@ -1,6 +1,7 @@
 <?php
 $compteurNegatif = 0;
 $compteurPositif = 0;
+//COMPTEUR DE VALEUR POSITIF ET NEGATIF
 $tailleTab = readline("Entrez la taille du tableau : ");
 for ($i = 0; $i < $tailleTab; $i++) {
     $tab[$i] = readline("Entrez votre valeur : ");

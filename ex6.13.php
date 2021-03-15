@@ -10,6 +10,7 @@ for ($i = 0; $i < $tailleTab; $i++) {
 }
 $max = $tab1[0];
 $position = 0;
+//AFFICHE LA VALEUR MAX DU TABLEAU AVEC SA POSITION
 for ($i = 0; $i < $tailleTab; $i++) {
     if ($tab1[$i] > $max) {
         $max = $tab1[$i];
