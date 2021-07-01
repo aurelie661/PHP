@@ -1,13 +1,16 @@
 <?php
-$tailleTab = readline("Entrer la taille du tableau : ");
-$sommeTab = 0;
-//CALCUL DE LA SOMME DES VALEURS DU TABLEAU
-for ($i = 0; $i < $tailleTab; $i++) {
-    $tab[$i] = readline("Entrer votre valeur : ");
-    $sommeTab = $sommeTab + $tab[$i];
+$somme = 0;
+$total = 0;
+
+function add($nb1, $nb2)
+{
+    $total = $nb1 + $nb2;
+    return $total;
 }
-echo "\nListe des valeurs du tableau : ";
+
+$tailleTab = readline("Entrez la taille du tableau : ");
 for ($i = 0; $i < $tailleTab; $i++) {
-    echo $tab[$i] . " ";
+    $tab[$i] = readline("Entrez votre valeur : ");
+    $somme = add($somme, $tab[$i]);
 }
-echo "\n\nSomme des valeurs du tableau : " . $sommeTab;
+echo "La somme du tableau est : " . $somme;

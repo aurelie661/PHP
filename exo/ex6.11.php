@@ -1,11 +1,27 @@
 <?php
-$tab1 = array(4, 8, 7, 12);
-$tab2 = array(3, 6);
-$schtroumpf = 0;
-//CALCUL DU SCHTROUMPF
-for ($i = 0; $i < count($tab2); $i++) {
-    for ($j = 0; $j < count($tab1); $j++) {
-        $schtroumpf = $schtroumpf + $tab1[$j] * $tab2[$i];
-    }
+$somme = 0;
+$somme2 = 0;
+$total = 0;
+
+function add($nb1, $nb2)
+{
+    $total = $nb1 + $nb2;
+    return $total;
 }
-echo "Le Schtroumpf est de : " . $schtroumpf;
+
+$tailleTab1 = readline("Entrez la taille du premier tableau : ");
+for ($i = 0; $i < $tailleTab1; $i++) {
+    $tab1[$i] = readline("Entrez votre valeur n°" . ($i + 1) . ": ");
+}
+$tailleTab2 = readline("Entrez la taille du deuxième tableau : ");
+for ($i = 0; $i < $tailleTab2; $i++) {
+    $tab2[$i] = readline("Entrez votre valeur n°" . ($i + 1) . ": ");
+}
+for ($i = 0; $i <= $tailleTab1; $i++) {
+    for ($j = 0; $j <= $tailleTab2; $j++) {
+        $somme = ($tab1[$i] * $tab2[$j]);
+        $somme2 = add($somme, $somme2);
+    }
+    echo $somme2 . " ";
+}
+//a FINIR
